@@ -1,0 +1,17 @@
+# --- Large workspace dumps (exceed GitHub's 100 MB limit) ---
+matlab_1.mat
+matlab_2.mat
+
+# --- Large dataset / paper-figure folders (gigabytes, not needed to run) ---
+ORIGINAL IMAGE RESULTS/
+Paper1_Springer_MTAP/
+frgd/
+
+# --- MATLAB autosave / temp / logs ---
+*.asv
+*.log
+*.giosave*
+
+# --- OS cruft ---
+Thumbs.db
+.DS_Store
