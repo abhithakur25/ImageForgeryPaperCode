@@ -1,0 +1,20 @@
+# Normalize line endings for text files; auto-detect binary
+* text=auto
+
+# --- MATLAB source: force correct language classification ---
+*.m      text linguist-language=MATLAB
+
+# --- Third-party SIFT/MIFT/SLIC MEX sources: vendored (excluded from stats) ---
+*.c      text linguist-vendored
+*.cpp    text linguist-vendored
+*.h      text linguist-vendored
+
+# --- Compiled binaries / data / images: binary, excluded from language stats ---
+*.mexw64 binary linguist-generated
+*.exe    binary linguist-vendored
+*.mat    binary linguist-generated
+*.png    binary
+*.jpg    binary
+
+# --- Documentation: keep out of the main language bar ---
+*.md     linguist-documentation
